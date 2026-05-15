@@ -1,0 +1,62 @@
+/* For information on how to create your own theme, please refer to:
+http://ionicframework.com/docs/theming/ */
+
+:root {
+  --ion-color-primary: #211aa2;
+  --ion-color-primary-rgb: 108, 99, 255;
+}
+
+:root {
+  --app-bg: #0f1020;
+  --app-text: #ffffff;
+  --card-bg: #1b1d3a;
+}
+
+body.light-theme {
+  --app-bg: #f5f6ff;
+  --app-text: #111;
+  --card-bg: #ffffff;
+}
+
+* {
+  transition: 
+    background-color 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+ion-content,
+ion-toolbar,
+ion-card,
+ion-button {
+  transition: 
+    background-color 0.35s ease,
+    color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+::-webkit-scrollbar{
+  width: 0px;
+  height: 0px;
+}
+
+html{
+  scrollbar-width: none;
+}
+
+body{
+  -ms-overflow-style: none;
+}
+
+ion-content::part(scroll)::-webkit-scrollbar{
+  display: none;
+}
+
+ion-content::part(scroll){
+  scrollbar-width: none;
+}
+
+ion-router-outlet {
+  contain: layout style size;
+}

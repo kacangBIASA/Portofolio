@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concave Navigation Bar</title>
+    <!-- Mengambil Icon dari FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* --- Reset Dasar --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            /* Memberikan jarak di bawah agar tidak tertutup nav */
+            padding-bottom: 100px; 
+        }
+
+        /* --- Styling Concave Navigation Bar --- */
+        .concave-nav {
+            position: fixed;
+            bottom: 30px; /* Jarak dari bawah layar */
+            left: 50%;
+            transform: translateX(-50%); /* Memastikan rata tengah */
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            background-color: #ffffff;
+            padding: 15px 30px;
+            border-radius: 50px; /* Membuat bentuk pil */
+            
+            /* Efek Bayangan (Floating Effect) */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15), 
+                        0 5px 10px rgba(0, 0, 0, 0.05);
+            
+            z-index: 1000;
+            width: 90%;
+            max-width: 500px; /* Batas lebar maksimal */
+        }
+
+        /* --- Item Navigasi Biasa --- */
+        .nav-item {
+            text-decoration: none;
+            color: #8e8e93;
+            font-size: 1.2rem;
+            padding: 10px 15px;
+            margin: 0 5px;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-item i {
+            font-size: 1.3rem;
+        }
+
+        /* Efek Hover */
+        .nav-item:hover {
+            color: #6c5ce7;
+            background-color: #f0f0f3;
+            transform: translateY(-3px);
+        }
+
+        /* --- Tombol Tengah (The Concave Feature) --- */
+        .nav-center {
+            position: relative;
+            /* Menekan tombol ke atas agar menonjol */
+            margin-top: -45px; 
+        }
+
+        .nav-center-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #6c5ce7, #a29bfe); /* Warna Gradasi */
+            border-radius: 50%;
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+            box-shadow: 0 8px 15px rgba(108, 92, 231, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .nav-center-btn:hover {
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 12px 20px rgba(108, 92, 231, 0.6);
+        }
+
+        /* --- Konten Contoh --- */
+        .content {
+            padding: 40px;
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Konten Halaman (Dummy) -->
+    <div class="content">
+        <h1>Concave Navigation Bar</h1>
+        <p>Gulir ke bawah untuk melihat efek melayang (floating).</p>
+    </div>
+
+    <!-- Komponen Navigasi -->
+    <nav class="concave-nav">
+        <!-- Item Kiri -->
+        <a href="#" class="nav-item" title="Beranda">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <a href="#" class="nav-item" title="Pencarian">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+
+        <!-- Tombol Tengah (Menonjol) -->
+        <div class="nav-center">
+            <a href="#" class="nav-center-btn">
+                <i class="fa-solid fa-plus"></i>
+            </a>
+        </div>
+
+        <!-- Item Kanan -->
+        <a href="#" class="nav-item" title="Notifikasi">
+            <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="#" class="nav-item" title="Profil">
+            <i class="fa-regular fa-user"></i>
+        </a>
+    </nav>
+
+</body>
+</html>

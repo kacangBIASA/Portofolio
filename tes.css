@@ -1,0 +1,7 @@
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.7); /* Putih dengan transparansi */
+    backdrop-filter: blur(10px); /* Efek blur di belakang navbar */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 15px 8%;
+    color: #333;
+}
