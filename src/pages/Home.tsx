@@ -120,7 +120,7 @@ const Home: React.FC = () => {
 
               <IonCol size="12" sizeMd="6" className="hero-left">
                 <IonAvatar className="hero-avatar">
-                  <img src="/public/img/Ridho2.jpeg" alt="profile" />
+                  <img src="/img/Ridho2.jpeg" alt="profile" />
                 </IonAvatar>
               </IonCol>
 
