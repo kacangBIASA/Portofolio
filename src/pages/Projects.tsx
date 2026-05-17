@@ -36,6 +36,27 @@ const Projects: React.FC = () => {
                             </div>
                         </div>
 
+                        <div className="project-card scroll-hidden">
+                            <img src="/img/KajianApp.png" alt="project" />
+
+                            <div className="project-content">
+                                <h3>KajianApp</h3>
+                                <p>
+                                    Aplikasi manajemen kajian untuk organisasi islam.
+                                </p>
+
+                                <div className="tech">
+                                    <span>Laravel</span>
+                                    <span>MySQL</span>
+                                </div>
+
+                                <div className="project-buttons">
+                                    <a href="https://manajemen-kajian.vercel.app/" className="btn-demo">Live Demo</a>
+                                    <a href="https://github.com/kacangBIASA/manajemen-kajian.git" className="btn-github">Github</a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
