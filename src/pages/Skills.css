@@ -1,7 +1,7 @@
 .skill-section {
   min-height: 100vh;
   padding: 80px 20px;
-    background: rgb(3, 2, 9);
+  background: radial-gradient(circle at bottom left, #160f2e, #050508 70%);
   color: var(--app-text);
 }
 
@@ -15,18 +15,20 @@
 }
 
 .progress-bar {
-  height: 12px;
-  background: #2a2d5a;
+  height: 14px;
+  background: rgba(26, 20, 56, 0.8);
   border-radius: 20px;
   overflow: hidden;
+  border: 1px solid rgba(0, 240, 255, 0.2);
 }
 
 .progress-fill {
   height: 100%;
   width: 0;
-  background: linear-gradient(90deg, #6c63ff, #4a47a3);
+  background: linear-gradient(90deg, #00f0ff, #ff007f);
   border-radius: 20px;
   transition: width 1.5s ease;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
 }
 
 @media (max-width: 768px){

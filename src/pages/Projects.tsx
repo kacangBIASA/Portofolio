@@ -15,7 +15,7 @@ const Projects: React.FC = () => {
 
                     <div className="project-grid">
 
-                        <div className="project-card scroll-hidden">
+                        <div className="project-card">
                             <img src="/img/queuenow.png" alt="project" />
 
                             <div className="project-content">
@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
                             </div>
                         </div>
 
-                        <div className="project-card scroll-hidden">
+                        <div className="project-card">
                             <img src="/img/KajianApp.png" alt="project" />
 
                             <div className="project-content">
