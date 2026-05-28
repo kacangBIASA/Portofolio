@@ -44,7 +44,7 @@ const App: React.FC = () => (
   <IonApp>
     <AnimatedShader />
     <IonReactRouter>
-      <IonRouterOutlet>
+      <IonRouterOutlet animated={false}>
         <Route exact path="/home" component={Home}/>
         <Route exact path="/about" component={About} />
         <Route exact path="/projects" component={Projects} />
