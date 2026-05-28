@@ -2,14 +2,23 @@
 http://ionicframework.com/docs/theming/ */
 
 :root {
-  --ion-color-primary: #211aa2;
-  --ion-color-primary-rgb: 108, 99, 255;
+  --ion-color-primary: #00f0ff;
+  --ion-color-primary-rgb: 0, 240, 255;
 }
 
 :root {
-  --app-bg: #0f1020;
+  --app-bg: transparent;
   --app-text: #ffffff;
-  --card-bg: #1b1d3a;
+  --card-bg: #111111;
+  --ion-background-color: transparent !important;
+}
+
+ion-content {
+  --background: transparent !important;
+}
+
+.ion-page, ion-app {
+  background: transparent !important;
 }
 
 body.light-theme {

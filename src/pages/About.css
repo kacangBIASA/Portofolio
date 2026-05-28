@@ -1,6 +1,6 @@
 .page-padding {
   padding-top: 80px; 
-  background: radial-gradient(circle at top right, #160f2e, #050508 70%);
+  background: transparent;
   min-height: 100vh;
 }
 
@@ -81,7 +81,7 @@
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #ff007f, #7000ff);
+  background: #ff007f;
   color: white;
   border: none;
   padding: 15px 40px;

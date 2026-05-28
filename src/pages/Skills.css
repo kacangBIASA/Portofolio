@@ -1,7 +1,7 @@
 .skill-section {
   min-height: 100vh;
   padding: 80px 20px;
-  background: radial-gradient(circle at bottom left, #160f2e, #050508 70%);
+  background: transparent;
   color: var(--app-text);
 }
 
@@ -25,13 +25,13 @@
 .progress-fill {
   height: 100%;
   width: 0;
-  background: linear-gradient(90deg, #00f0ff, #ff007f);
+  background: #00f0ff;
   border-radius: 20px;
   transition: width 1.5s ease;
   box-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .skill-section {
     padding: 20px 20px;
     margin-bottom: 20px;

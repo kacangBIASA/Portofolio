@@ -37,7 +37,7 @@ const About: React.FC = () => {
                             <div ref={textRef} className="about-card scroll-hidden">
                                 <h2 className="section-title">ABOUT ME</h2>
                                 <p className="about-text">
-                                    Saya adalah developer pemula yang fokus pada pengembangan website dan aplikasi
+                                    Saya adalah developer yang fokus pada pengembangan website dan aplikasi
                                     dengan HTML, CSS, PHP, JS, hingga framework seperti Laravel dan Ionic React. 
                                     Saya juga sangat tertarik pada bidang UI/UX Design dan selalu berusaha 
                                     membuat antarmuka yang user-friendly serta estetis.
@@ -47,17 +47,17 @@ const About: React.FC = () => {
 
                         <div id='contact' className="contact-section">
                             <div ref={contactRef} className="contact-card scroll-hidden">
-                                <h2 className="section-title">GET IN TOUCH</h2>
+                                <h2 className="section-title">CONTACT</h2>
                                 <p className="contact-subtitle">Mari berkolaborasi dan buat sesuatu yang luar biasa bersama.</p>
                                 
                                 <div className="contact-info">
                                     <div className="contact-item">
                                         <IonIcon icon={mailOutline} className="contact-icon" />
-                                        <span>email@example.com</span>
+                                        <span>ridhonasrullah45@gmail.com</span>
                                     </div>
                                     <div className="contact-item">
                                         <IonIcon icon={logoWhatsapp} className="contact-icon" />
-                                        <span>+62 812-3456-7890</span>
+                                        <span>+62 858-5085-4547</span>
                                     </div>
                                     <div className="contact-item">
                                         <IonIcon icon={locationOutline} className="contact-icon" />
@@ -65,7 +65,7 @@ const About: React.FC = () => {
                                     </div>
                                 </div>
                                 
-                                <button className="btn-primary mt-4">Send a Message</button>
+                                <button className="btn-primary mt-4" onClick={() => window.location.href = 'mailto:[ridhonasrullah45@gmail.com]'}>Send a Message</button>
                             </div>
                         </div>
                     </IonGrid>

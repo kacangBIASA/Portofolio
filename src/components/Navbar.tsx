@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
     const handleFeedbackSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setIsSubmitting(true);
-        
+
         const form = e.currentTarget;
         const formData = new FormData(form);
 
@@ -94,10 +94,10 @@ const Navbar: React.FC = () => {
                     <IonIcon icon={mail} />
                 </a>
             </div>
-            
+
             {/* Floating Chat / Feedback Button */}
-            <div className="floating-chat-btn" onClick={() => setShowModal(true)} style={{cursor: 'pointer'}}>
-                <span className="chat-text">Send Feedback 💡</span>
+            <div className="floating-chat-btn" onClick={() => setShowModal(true)} style={{ cursor: 'pointer' }}>
+                <span className="chat-text">Send Feedback</span>
                 <div className="chat-icon-wrapper">
                     <IonIcon icon={chatbubbleEllipsesOutline} />
                 </div>
@@ -122,36 +122,36 @@ const Navbar: React.FC = () => {
                     </div>
 
                     <form onSubmit={handleFeedbackSubmit} className="feedback-form">
-                        <IonInput 
+                        <IonInput
                             className="custom-input"
-                            fill="outline" 
-                            label="Nama Lengkap" 
-                            labelPlacement="floating" 
-                            type="text" 
-                            name="name" 
-                            required
-                        ></IonInput>
-                        
-                        <IonInput 
-                            className="custom-input mt-3"
-                            fill="outline" 
-                            label="Email Anda" 
-                            labelPlacement="floating" 
-                            type="email" 
-                            name="email" 
+                            fill="outline"
+                            label="Nama Lengkap"
+                            labelPlacement="floating"
+                            type="text"
+                            name="name"
                             required
                         ></IonInput>
 
-                        <IonTextarea 
+                        <IonInput
                             className="custom-input mt-3"
-                            fill="outline" 
-                            label="Pesan / Saran" 
-                            labelPlacement="floating" 
-                            name="message" 
-                            rows={5} 
+                            fill="outline"
+                            label="Email Anda"
+                            labelPlacement="floating"
+                            type="email"
+                            name="email"
+                            required
+                        ></IonInput>
+
+                        <IonTextarea
+                            className="custom-input mt-3"
+                            fill="outline"
+                            label="Pesan / Saran"
+                            labelPlacement="floating"
+                            name="message"
+                            rows={5}
                             required
                         ></IonTextarea>
-                        
+
                         <button type="submit" className="btn-primary mt-4 w-100" disabled={isSubmitting}>
                             {isSubmitting ? "Mengirim..." : "Kirim Pesan 🚀"}
                         </button>

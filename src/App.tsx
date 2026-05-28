@@ -38,8 +38,11 @@ import './theme/variables.css';
 
 setupIonicReact();
 
+import AnimatedShader from './components/AnimatedShader';
+
 const App: React.FC = () => (
   <IonApp>
+    <AnimatedShader />
     <IonReactRouter>
       <IonRouterOutlet>
         <Route exact path="/home" component={Home}/>

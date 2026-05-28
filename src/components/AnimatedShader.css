@@ -1,0 +1,67 @@
+.shader-bg-wrapper {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #09090b;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.shader-blob {
+  position: absolute;
+  filter: blur(100px); /* Creates the fluid shader look */
+  opacity: 0.5;
+  animation: moveBlob infinite alternate ease-in-out;
+  border-radius: 50%;
+}
+
+.shader-blob.cyan {
+  background: #00f0ff;
+  width: 60vw;
+  height: 60vh;
+  top: -10%;
+  left: -10%;
+  animation-duration: 20s;
+}
+
+.shader-blob.pink {
+  background: #ff007f;
+  width: 50vw;
+  height: 50vh;
+  bottom: -10%;
+  right: -10%;
+  animation-duration: 18s;
+  animation-delay: -5s;
+}
+
+.shader-blob.purple {
+  background: #7000ff;
+  width: 55vw;
+  height: 55vh;
+  top: 30%;
+  left: 20%;
+  animation-duration: 22s;
+  animation-delay: -10s;
+}
+
+.shader-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(9, 9, 11, 0.4); /* Dimmer over the blobs */
+  z-index: 1;
+}
+
+@keyframes moveBlob {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(15vw, -10vh) scale(1.1); }
+  66% { transform: translate(-15vw, 15vh) scale(0.9); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+@media (max-width: 768px) {
+  .shader-blob {
+    filter: blur(70px);
+  }
+}

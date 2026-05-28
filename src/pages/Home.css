@@ -2,7 +2,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: radial-gradient(circle at top left, #160f2e, #050508 70%);
+  background: transparent;
   color: white;
   padding: 20px;
 }
@@ -43,7 +43,7 @@
 }
 
 .hero-button {
-  background: linear-gradient(135deg, #ff007f, #7000ff);
+  background: #ff007f;
   color: white;
   font-weight: bold;
   border-radius: 30px;
